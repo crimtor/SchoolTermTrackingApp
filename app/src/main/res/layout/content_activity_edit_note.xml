@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.schoolapp.schoolapp.ActivityEditNote"
+    tools:showIn="@layout/activity_edit_note">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="1"
+        android:rowCount="4">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="0"
+        android:layout_row="0"
+        android:text="Note Content:"
+        android:layout_marginLeft="25dp"
+        android:layout_margin="5dp"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        />
+
+    <EditText
+        android:id="@+id/etNoteEditText"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_column="0"
+        android:layout_row="1"
+        android:layout_marginStart="10dp"
+        android:inputType="textCapSentences|textMultiLine"
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        android:textSize="18sp"
+        android:hint="Write note Here" />
+
+        <Button
+            android:id="@+id/saveTermButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="2"
+            android:text="Save Note"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_margin="5dp"
+            android:layout_marginLeft="25dp"
+            android:onClick="saveNote" />
+
+    </GridLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

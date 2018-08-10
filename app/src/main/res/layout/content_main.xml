@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.schoolapp.schoolapp.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:columnCount="2"
+        android:rowCount="5"
+        >
+
+        <ProgressBar
+            android:id="@+id/pbMainActivity"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_gravity="fill_horizontal"
+            android:layout_columnSpan="2"
+            android:layout_row="0"
+            android:progress="0"/>
+
+        <TextView
+        android:id="@+id/textViewProgressBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_row="1"
+        android:layout_columnSpan="2"
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        android:text="Percent Complete of courses assigned"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+        <ImageButton
+            android:id="@+id/imageButtonTerms"
+            android:layout_width="180dp"
+            android:layout_height="160dp"
+            android:layout_column="0"
+            android:layout_gravity="fill_horizontal"
+            android:layout_row="3"
+            android:contentDescription="View All Terms"
+            android:onClick="openListOfTerms"
+            android:padding="5dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_action_term" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:textAlignment="center"
+            android:layout_gravity="fill_horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_row="4"
+            android:text="View Terms"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <ImageButton
+            android:id="@+id/imageButtonMentors"
+            android:layout_width="180dp"
+            android:layout_height="160dp"
+            android:layout_column="1"
+            android:layout_gravity="fill_horizontal"
+            android:layout_row="3"
+            android:onClick="openListOfMentors"
+            android:padding="5dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_action_mentor" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_gravity="fill_horizontal"
+            android:textAlignment="center"
+            android:layout_marginLeft="10dp"
+            android:layout_row="4"
+            android:text="View Mentors"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+    </GridLayout>
+
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>

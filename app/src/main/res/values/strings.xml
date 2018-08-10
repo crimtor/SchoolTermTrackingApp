@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">School Progress App</string>
+    <string name="action_settings">Settings</string>
+    <string name="view_courses">View Courses</string>
+    <string name="view_mentors">View Mentors</string>
+    <string name="create_dummy_data">Create Dummy Data</string>
+    <string name="title_activity_course_list"> Course List Screen </string>
+    <string name="title_activity_list_mentor"> Mentor List Screen </string>
+    <string name="title_activity_list_term"> Term List Screen </string>
+    <string name="title_activity_edit_term"> Edit Term Screen </string>
+    <string name="title_activity_view_term"> Term Details Screen </string>
+    <string name="title_activity_edit_course"> Edit Course Screen </string>
+    <string name="view_terms">View Terms</string>
+    <string name="title_activity_view_course"> Course Details Screen </string>
+    <string name="title_activity_edit_mentor"> Edit Mentor Screen </string>
+    <string name="title_activity_list_assessment"> Assessment List Screen </string>
+    <string name="title_activity_view_assessment"> Assessment Detail Screen </string>
+    <string name="title_activity_edit_assessment"> Edit Assessment Screen </string>
+    <string name="title_activity_edit_note"> Edit Note Screen </string>
+    <string name="title_activity_list_note"> Note List Screen </string>
+    <string name="title_activity_view_note"> Note Detail Screen </string>
+    <string name="title_activity_view_mentor">ActivityViewMentor</string>
+    <string name="title_activity_list_all_mentors">ActivityListAllMentors</string>
+    <string name="home_screen_button">Home Screen Button</string>
+</resources>

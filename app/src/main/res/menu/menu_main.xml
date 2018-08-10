@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.schoolapp.schoolapp.MainActivity">
+    <item
+        android:id="@+id/action_terms"
+        android:orderInCategory="100"
+        android:title="View Terms"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_create_data"
+        android:orderInCategory="101"
+        android:title="Create Sample Data"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_delete_all_data"
+        android:orderInCategory="102"
+        android:title="Delete All Data"
+        app:showAsAction="never" />
+
+</menu>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:padding="4dp">
+
+    <ImageView
+        android:id="@+id/ivCourseImage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_action_course" />
+
+
+    <TextView
+        android:id="@+id/tvCourseTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="4dp"
+        android:layout_toEndOf="@+id/ivCourseImage"
+        android:layout_toRightOf="@+id/ivCourseImage"
+        android:singleLine="true"
+        android:text="Course Title Holder"
+        android:textSize="18sp" />
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tvCourseTitle"
+        android:layout_toRightOf="@+id/ivCourseImage"
+        android:layout_toEndOf="@+id/ivCourseImage">
+
+        <TextView
+            android:id="@+id/tvCourseStartDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvCourseTitle"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_toRightOf="@+id/ivCourseImage"
+            android:layout_toEndOf="@+id/ivCourseImage"
+            android:text="StartDate Holder" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvCourseTitle"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_toRightOf="@+id/ivCourseImage"
+            android:layout_toEndOf="@+id/ivCourseImage"
+            android:text=" - " />
+
+        <TextView
+            android:id="@+id/tvCourseEndDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvCourseTitle"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_toRightOf="@+id/ivCourseImage"
+            android:layout_toEndOf="@+id/ivCourseImage"
+            android:text="EndDate Holder" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvCourseStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivCourseImage"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginBottom="10dp"
+        android:text="Status Holder" />
+
+</RelativeLayout>

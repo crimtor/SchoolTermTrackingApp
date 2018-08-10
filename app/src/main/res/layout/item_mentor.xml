@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:padding="4dp">
+
+    <ImageView
+        android:id="@+id/ivMentorImage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_action_mentor" />
+
+
+    <TextView
+        android:id="@+id/tvMentorName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="4dp"
+        android:layout_toEndOf="@+id/ivMentorImage"
+        android:layout_toRightOf="@+id/ivMentorImage"
+        android:singleLine="true"
+        android:text="Mentor Name Holder"
+        android:textSize="18sp" />
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tvMentorName"
+        android:layout_toRightOf="@+id/ivMentorImage"
+        android:layout_toEndOf="@+id/ivMentorImage">
+
+        <TextView
+            android:id="@+id/tvMentorPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvMentorName"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_toRightOf="@+id/ivMentorImage"
+            android:layout_toEndOf="@+id/ivMentorImage"
+            android:text="Mentor Phone Holder" />
+
+
+        <TextView
+            android:id="@+id/tvMentorEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvMentorName"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="1dp"
+            android:layout_toRightOf="@+id/ivMentorImage"
+            android:layout_toEndOf="@+id/ivMentorImage"
+            android:text="Mentor Email Holder" />
+
+    </LinearLayout>
+
+</RelativeLayout>

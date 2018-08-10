@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.schoolapp.schoolapp.ActivityEditCourse"
+    tools:showIn="@layout/activity_edit_course">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="8"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_row="0"
+            android:text="Course Title"
+            android:layout_marginLeft="10dp"
+            android:layout_margin="5dp"
+            android:layout_gravity="center"
+            android:textSize="12sp"
+            />
+
+        <EditText
+            android:id="@+id/etCourseEditTitle"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="0"
+            android:layout_marginStart="10dp"
+            android:inputType="textCapSentences|textMultiLine"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:textSize="24sp"
+            android:hint="Course Title" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_row="1"
+            android:text="Course Start Date"
+            android:layout_marginLeft="10dp"
+            android:layout_margin="5dp"
+            android:layout_gravity="center"
+            android:textSize="12sp"
+            />
+
+        <TextView
+            android:id="@+id/tvCourseEditStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="1"
+            android:text="Start Date"
+            android:layout_marginLeft="20dp"
+            android:layout_margin="5dp"
+            android:layout_gravity="center"
+            android:textSize="24sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_row="2"
+            android:text="Course End Date"
+            android:layout_marginLeft="10dp"
+            android:layout_margin="5dp"
+            android:layout_gravity="center"
+            android:textSize="12sp"
+            />
+
+        <TextView
+            android:id="@+id/tvCourseEditEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="2"
+            android:text="End Date"
+            android:layout_marginLeft="20dp"
+            android:layout_margin="5dp"
+            android:layout_gravity="center"
+            android:textSize="24sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_row="3"
+            android:text="Course Status"
+            android:layout_marginLeft="10dp"
+            android:layout_margin="5dp"
+            android:layout_gravity="center"
+            android:textSize="12sp"
+            />
+
+        <TextView
+            android:id="@+id/tvCourseEditStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="3"
+            android:text="Status"
+            android:layout_marginLeft="20dp"
+            android:layout_margin="5dp"
+            android:layout_gravity="center"
+            android:textSize="24sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_row="4"
+            android:text="Course Description"
+            android:layout_marginLeft="10dp"
+            android:layout_margin="5dp"
+            android:layout_gravity="center"
+            android:textSize="12sp"
+            />
+
+        <EditText
+            android:id="@+id/etCourseEditDescription"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="4"
+            android:layout_marginStart="10dp"
+            android:inputType="textCapSentences|textMultiLine"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:textSize="24sp"
+            android:hint="Course Description" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_row="5"
+            android:text="Course Notifications"
+            android:layout_marginLeft="10dp"
+            android:layout_margin="5dp"
+            android:layout_gravity="center"
+            android:textSize="12sp"
+            />
+
+        <ToggleButton
+            android:id="@+id/tbCourseEditNotifications"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="5"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center"
+            android:text="Notifications" />
+
+        <Button
+            android:id="@+id/saveCourseButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnSpan="2"
+            android:layout_row="7"
+            android:text="Save Course"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_margin="5dp"
+            android:layout_marginLeft="50dp"
+            android:onClick="saveCourse" />
+
+    </GridLayout>
+
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>
